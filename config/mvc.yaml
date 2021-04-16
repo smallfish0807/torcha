@@ -1,0 +1,25 @@
+image_dir_train: data/mvc/train
+image_dir_valid: data/mvc/valid
+image_dir_test: data/mvc/test
+label_file_train: data/mvc/labels_train
+label_file_valid: data/mvc/labels_valid
+label_file_test: data/mvc/labels_test
+
+chars: ACDEFGHJKLMNPQRSTUVWXYZ234678i9
+
+model: MvcCNN
+model_kwargs:
+    input_shape: [3, 32, 80]
+    num_class: 31
+    length: 4
+
+criterion: MvcCrossEntropyLoss
+criterion_kwargs: {}
+
+optimizer: Adam
+optimizer_kwargs:
+    lr: 0.0001
+
+seed: 0
+batch_size: 128
+epoch: 100

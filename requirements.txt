@@ -1,0 +1,15 @@
+# How to install:
+# pip install -r requirements.txt
+
+# Miscellaneum
+pyyaml
+pandas
+tqdm
+
+# Compatible with Cuda 10.0
+torch==1.2.0
+torchvision==0.4.0
+
+# Tensorboard
+tensorboard
+future
